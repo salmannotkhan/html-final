@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 80vw;
+    margin-inline: auto;
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header.white-bg {
+    background-color: white;
+    color: black;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .brand {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul a {
+    padding-inline: 10px;
+}
+
+section#home {
+    position: relative;
+}
+
+.slider-images {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    z-index: 99;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .controls button.dot {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.5;
+    border: none;
+}
+
+.slider .controls button.dot.active {
+    background-color: white;
+    opacity: 1;
+}
+
+.main-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-text .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.main-text p {
+    max-width: 50%;
+    font-size: 60px;
+}
+
+.main-text p b:first-of-type {
+    font-size: 90px;
+}
+
+.main-text button {
+    width: 200px;
+    height: 55px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+    border: none;
+    background-image: linear-gradient(
+        -90deg,
+        #fb5c7d 0%,
+        rgba(100, 97, 207, 0.91) 100%
+    );
+}
+
+section#about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+section#about > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+section#about img {
+    width: 470px;
+    height: 600px;
+}
+
+section#about .details {
+    display: flex;
+    flex-direction: column;
+}
+
+section#about .details h6 {
+    font-size: 35px;
+    line-height: 45px;
+    max-width: 50%;
+    font-weight: normal;
+}
+
+section#about .details h6::first-line {
+    font-weight: 600;
+}
+
+section#about .details p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #878787;
+    font-weight: 400;
+}
+
+section#about .details img {
+    width: 100px;
+    height: 100px;
+    margin-inline: auto;
+}
+
+section#about .details .icon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 30px;
+}
+
+section#about .details .icon-grid div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+section#about .details .icon-grid div p {
+    text-align: center;
+}
+
+section#about .stats {
+    background-image: url("../img/pattern-parallax.jpg");
+}
+
+section#about .stats .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+
+section#about .stats .container div {
+    text-align: center;
+}
+
+section#about .stats .container div h4 {
+    font-size: 60px;
+    color: #f95d80;
+    font-weight: 700;
+}
+
+section#about .stats .container div p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+section#work {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section#work .container {
+    display: flex;
+    flex: 1;
+}
+
+section#work .container h4 {
+    flex: 1;
+}
+
+section#work .container ul {
+    display: flex;
+}
+
+section#work .container ul a {
+    padding: 10px 20px;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-grid div {
+    max-width: max-content;
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
